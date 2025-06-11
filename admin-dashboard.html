@@ -1,0 +1,321 @@
+
+<html lang="en">
+
+  <head>
+
+    <link rel="stylesheet" href="admin-dashboard.css" />
+
+    <script src="admin-dashboard.js" defer></script>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dashboard</title>
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <div>Tekica korisnik dashboard</div>
+
+      <div class="button-container">
+
+        <button id="urediKorisnika">Uredi Korisnika</button>
+
+        <div id="modalUrediKorisnik" class="modal-uredi-korisnik">
+
+          <div class="modal-content-uredi-korisnik">
+
+            <span class="close-uredi-korisnik">&times;</span>
+
+            <form id="formaUrediKorisnik" class="forma-uredi-korisnik">
+
+              <label class="left-item-uredi">
+
+                ID
+
+                <input
+
+                  type="text"
+
+                  name="id"
+
+                  placeholder="id"
+
+                  class="right-item-uredi"
+
+                />
+
+              </label>
+
+              <label class="left-item-uredi">
+
+                NAZIV
+
+                <input
+
+                  type="text"
+
+                  name="naziv"
+
+                  placeholder="naziv"
+
+                  class="right-item-uredi"
+
+                />
+
+              </label>
+
+              <label class="left-item-uredi">
+
+                EMAIL
+
+                <input
+
+                  type="email"
+
+                  name="email"
+
+                  placeholder="EMAIL"
+
+                  class="right-item-uredi"
+
+                />
+
+              </label>
+
+              <label class="left-item-uredi">
+
+                TELEFON
+
+                <input
+
+                  type="text"
+
+                  name="telefon"
+
+                  placeholder="TELEFON"
+
+                  class="right-item-uredi"
+
+                />
+
+              </label>
+
+              <label class="left-item-uredi">
+
+                ADRESA
+
+                <input
+
+                  type="text"
+
+                  name="adresa"
+
+                  placeholder="ADRESA"
+
+                  class="right-item-uredi"
+
+                />
+
+              </label>
+
+              <label class="left-item-uredi">
+
+                POREZNI BROJ
+
+                <input
+
+                  type="text"
+
+                  name="porezni_broj"
+
+                  placeholder="POREZNI BROJ"
+
+                  class="right-item-uredi"
+
+                />
+
+              </label>
+
+
+
+              <button type="submit" id="submitUrediKorisnik">
+
+                Spremi Promjene
+
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+
+
+        <button id="dodajKorisnika">Dodaj Korisnika</button>
+
+
+
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <form action="" id="formaKorisnik" class="forma">
+
+              <label class="left-item"
+
+                >NAZIV
+
+                <input
+
+                  type="text"
+
+                  name="naziv"
+
+                  placeholder="naziv"
+
+                  class="right-item"
+
+                />
+
+              </label>
+
+              <label class="left-item"
+
+                >EMAIL
+
+                <input
+
+                  type="email"
+
+                  name="email"
+
+                  placeholder="EMAIL"
+
+                  class="right-item"
+
+                />
+
+              </label>
+
+              <label class="left-item"
+
+                >TELEFON
+
+                <input
+
+                  type="text"
+
+                  name="telefon"
+
+                  placeholder="TELEFON"
+
+                  class="right-item"
+
+                />
+
+              </label>
+
+              <label class="left-item"
+
+                >ADRESA
+
+                <input
+
+                  type="text"
+
+                  name="adresa"
+
+                  placeholder="ADRESA"
+
+                  class="right-item"
+
+                />
+
+              </label>
+
+              <label class="left-item"
+
+                >POREZNI_BROJ
+
+                <input
+
+                  type="text"
+
+                  name="porezni_broj"
+
+                  placeholder="POREZNI_BROJ"
+
+                  class="right-item"
+
+                />
+
+              </label>
+
+
+
+              <button type="submit" id="addKorisnik">Dodaj Korisnika</button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+    <main>
+
+      <div class="container">
+
+        <table id="tablica">
+
+          <thead>
+
+            <tr>
+
+              <th>ID</th>
+
+              <th>NAZIV</th>
+
+              <th>MAIL</th>
+
+              <th>TELEFON</th>
+
+              <th>ADRESA</th>
+
+              <th>POREZNI_BROJ</th>
+
+              <th>DELETE</th>
+
+            </tr>
+
+          </thead>
+
+          <tbody></tbody>
+
+        </table>
+
+      </div>
+
+    </main>
+
+    <footer>
+
+      <button onclick="GoToUsluga()" id="goToUsluga">Usluga➡️</button>
+
+    </footer>
+
+  </body>
+
+</html>
+</html>

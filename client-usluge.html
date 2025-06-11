@@ -1,0 +1,157 @@
+
+
+<html lang="en">
+
+  <head>
+
+    <link rel="stylesheet" href="client-usluge.css" />
+
+    <script src="client-usluge.js" defer></script>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dashboard</title>
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <div>USLUGA</div>
+
+      <div class="button-container">
+
+        <button id="dodajRezervacija">Dodaj Rezervaciju</button>
+
+
+
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <form action="" id="formaRezervacija" class="forma">
+
+              <label class="left-item"
+
+                >korisnik_id
+
+                <input
+
+                  type="text"
+
+                  name="korisnik_id"
+
+                  placeholder="korisnik_id"
+
+                  class="right-item"
+
+                />
+
+              </label>
+
+              <label class="left-item"
+
+                >usluga_id
+
+                <input
+
+                  type="text"
+
+                  name="usluga_id"
+
+                  placeholder="usluga_id"
+
+                  class="right-item"
+
+                />
+
+              </label>
+
+              <label class="left-item"
+
+                >datum_vrijeme_rezervacije
+
+                <input
+
+                  type="text"
+
+                  name="datum_vrijeme_rezervacije"
+
+                  placeholder="datum_vrijeme_rezervacije"
+
+                  class="right-item"
+
+                />
+
+              </label>
+
+
+
+              <button type="submit" id="addRezervacija">
+
+                Dodaj Rezervaciju
+
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+    <main>
+
+      <div class="container">
+
+        <table id="tablica">
+
+          <thead>
+
+            <tr>
+
+              <th>ID</th>
+
+              <th>KORISNIK_ID</th>
+
+              <th>NAZIV</th>
+
+              <th>TRAJANJE</th>
+
+              <th>CIJENA</th>
+
+              <th>DELETE</th>
+
+            </tr>
+
+          </thead>
+
+          <tbody></tbody>
+
+        </table>
+
+      </div>
+
+    </main>
+
+    <footer>
+
+      <button onclick="GoToRezervacija()" id="goToRezervacija">
+
+        Rezervacija➡️
+
+      </button>
+
+    </footer>
+
+  </body>
+
+</html>
