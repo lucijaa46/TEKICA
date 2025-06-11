@@ -1,0 +1,239 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <link rel="stylesheet" href="client-rezervacija.css" />
+
+    <script src="client-rezervacija.js" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<body>
+    
+    <header>
+
+      <div>REZERVACIJE</div>
+
+      <div class="button-container">
+
+        <button id="urediRezervacija">Uredi Rezervaciju</button>
+
+        <div id="modalUrediRezervacija" class="modal-uredi-rezervacija">
+
+          <div class="modal-content-uredi-rezervacija">
+
+            <span class="close-uredi-rezervacija">&times;</span>
+
+            <form id="formaUrediRezervacija" class="forma-uredi-Rezervacija">
+
+              <label class="left-item-uredi">
+
+                ID
+
+                <input
+
+                  type="text"
+
+                  name="id"
+
+                  placeholder="id"
+
+                  class="right-item-uredi"
+
+                />
+
+              </label>
+
+              <label class="left-item-uredi">
+
+                korisnik_id
+
+                <input
+
+                  type="text"
+
+                  name="korisnik_id"
+
+                  placeholder="korisnik_id"
+
+                  class="right-item-uredi"
+
+                />
+
+              </label>
+
+              <label class="left-item-uredi">
+
+                usluga_id
+
+                <input
+
+                  type="text"
+
+                  name="usluga_id"
+
+                  placeholder="usluga_id"
+
+                  class="right-item-uredi"
+
+                />
+
+              </label>
+
+              <label class="left-item-uredi">
+
+                datum_vrijeme_rezervacije
+
+                <input
+
+                  type="text"
+
+                  name="datum_vrijeme_rezervacije"
+
+                  placeholder="datum_vrijeme_rezervacije"
+
+                  class="right-item-uredi"
+
+                />
+
+              </label>
+
+
+
+              <button type="submit" id="submitUrediRezervacija">
+
+                Spremi Promjene
+
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+
+
+        <button id="dodajRezervacija">Dodaj Rezervaciju</button>
+
+
+
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <form action="" id="formaRezervacija" class="forma">
+
+              <label class="left-item"
+
+                >korisnik_id
+
+                <input
+
+                  type="text"
+
+                  name="korisnik_id"
+
+                  placeholder="korisnik_id"
+
+                  class="right-item"
+
+                />
+
+              </label>
+
+              <label class="left-item"
+
+                >usluga_id
+
+                <input
+
+                  type="text"
+
+                  name="usluga_id"
+
+                  placeholder="usluga_id"
+
+                  class="right-item"
+
+                />
+
+              </label>
+
+              <label class="left-item"
+
+                >datum_vrijeme_rezervacije
+
+                <input
+
+                  type="text"
+
+                  name="datum_vrijeme_rezervacije"
+
+                  placeholder="datum_vrijeme_rezervacije"
+
+                  class="right-item"
+
+                />
+
+              </label>
+
+
+
+              <button type="submit" id="addRezervacija">
+
+                Dodaj Rezervaciju
+
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+    <main>
+
+      <div class="container">
+
+        <table id="tablica">
+
+          <thead>
+
+            <tr>
+
+              <th>ID</th>
+
+              <th>korisnik_id</th>
+
+              <th>usluga_id</th>
+
+              <th>datum_vrijeme_rezervacije</th>
+
+              <th>delete</th>
+
+            </tr>
+
+          </thead>
+
+          <tbody></tbody>
+
+        </table>
+
+      </div>
+
+    </main>
+
+    <footer>
+
+      <button onclick="GoToUsluga()" id="goToUsluga">Usluga➡️</button>
+
+    </footer>
+</body>
+</html>

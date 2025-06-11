@@ -1,0 +1,281 @@
+<html lang="en">
+
+  <head>
+
+    <link rel="stylesheet" href="admin-usluga.css" />
+
+    <script src="admin-usluga.js" defer></script>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Dashboard</title>
+
+  </head>
+
+  <body>
+
+    <header>
+
+      <div>Tekica usluga dashboard</div>
+
+      <div class="button-container">
+
+        <button id="urediUsluga">Uredi Uslugu</button>
+
+        <div id="modalUrediUsluga" class="modal-uredi-Usluga">
+
+          <div class="modal-content-uredi-Usluga">
+
+            <span class="close-uredi-Usluga">&times;</span>
+
+            <form id="formaUrediUsluga" class="forma-uredi-Usluga">
+
+              <label class="left-item-uredi">
+
+                ID
+
+                <input
+
+                  type="text"
+
+                  name="id"
+
+                  placeholder="id"
+
+                  class="right-item-uredi"
+
+                />
+
+              </label>
+
+              <label class="left-item-uredi">
+
+                Korisnik-id
+
+                <input
+
+                  type="text"
+
+                  name="korisnik_id"
+
+                  placeholder="korisnik_id"
+
+                  class="right-item-uredi"
+
+                />
+
+              </label>
+
+              <label class="left-item-uredi">
+
+                naziv
+
+                <input
+
+                  type="text"
+
+                  name="naziv"
+
+                  placeholder="naziv"
+
+                  class="right-item-uredi"
+
+                />
+
+              </label>
+
+              <label class="left-item-uredi">
+
+                trajanje
+
+                <input
+
+                  type="text"
+
+                  name="trajanje"
+
+                  placeholder="trajanje"
+
+                  class="right-item-uredi"
+
+                />
+
+              </label>
+
+              <label class="left-item-uredi">
+
+                cijena
+
+                <input
+
+                  type="text"
+
+                  name="cijena"
+
+                  placeholder="cijena"
+
+                  class="right-item-uredi"
+
+                />
+
+              </label>
+
+
+
+              <button type="submit" id="submitUrediUsluga">
+
+                Spremi Promjene
+
+              </button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+
+
+        <button id="dodajUsluga">Dodaj Uslugu</button>
+
+
+
+        <div id="myModal" class="modal">
+
+          <div class="modal-content">
+
+            <span class="close">&times;</span>
+
+            <form action="" id="formaUsluga" class="forma">
+
+              <label class="left-item"
+
+                >korisnik_id
+
+                <input
+
+                  type="text"
+
+                  name="korisnik_id"
+
+                  placeholder="korisnik_id"
+
+                  class="right-item"
+
+                />
+
+              </label>
+
+              <label class="left-item"
+
+                >naziv
+
+                <input
+
+                  type="text"
+
+                  name="naziv"
+
+                  placeholder="naziv"
+
+                  class="right-item"
+
+                />
+
+              </label>
+
+              <label class="left-item"
+
+                >trajanje
+
+                <input
+
+                  type="text"
+
+                  name="trajanje"
+
+                  placeholder="trajanje"
+
+                  class="right-item"
+
+                />
+
+              </label>
+
+              <label class="left-item"
+
+                >cijena
+
+                <input
+
+                  type="text"
+
+                  name="cijena"
+
+                  placeholder="cijena"
+
+                  class="right-item"
+
+                />
+
+              </label>
+
+
+
+              <button type="submit" id="addUsluga">Dodaj Uslugu</button>
+
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+    <main>
+
+      <div class="container">
+
+        <table id="tablica">
+
+          <thead>
+
+            <tr>
+
+              <th>ID</th>
+
+              <th>KORISNIK_ID</th>
+
+              <th>NAZIV</th>
+
+              <th>TRAJANJE</th>
+
+              <th>CIJENA</th>
+
+              <th>DELETE</th>
+
+            </tr>
+
+          </thead>
+
+          <tbody></tbody>
+
+        </table>
+
+      </div>
+
+    </main>
+
+    <footer>
+
+      <button onclick="GoToKorisnik()" id="goToKorisnik">Korisnik➡️</button>
+
+    </footer>
+
+  </body>
+
+</html>
